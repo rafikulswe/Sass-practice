@@ -1,0 +1,28 @@
+body {
+  background-color: lightgray;
+}
+
+table {
+  border: 2px solid teal;
+  border-collapse: collapse;
+}
+
+table thead {
+  border: 2px solid teal;
+}
+
+table thead td {
+  border: 2px solid red;
+}
+
+table tbody tr {
+  border: 2px solid tomato;
+}
+
+table tbody tr td {
+  padding: 5px;
+  text-align: center;
+  color: violet;
+  border: 2px solid red;
+}
+/*# sourceMappingURL=part-1.css.map */
