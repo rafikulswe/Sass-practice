@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #d41e31, #d91f8f);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 400px;
+}
+
+.card:hover img {
+  left: 80%;
+  height: 500px;
+}
+
+.card .content {
+  width: 50%;
+  position: relative;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card .content h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.card .content p {
+  color: #fff;
+  margin-top: 5px;
+}
+
+.card .content a {
+  color: #111;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.card:hover .content {
+  opacity: 1;
+  visibility: visible;
+  left: 0%;
+}
+/*# sourceMappingURL=marvelCard.css.map */

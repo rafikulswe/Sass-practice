@@ -1,0 +1,78 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.social-bar {
+    padding: 3px 6px;
+    background-color: lightblue;
+    text-align: right;
+    i {
+        margin-right: 4px;
+        cursor: pointer;
+    }
+}
+
+.header {
+    padding: 6px;
+    height: 100px;
+    background-color: lightgray;
+    .row {
+        .col-3 {
+            float: left;
+            width: 25%;
+            font-family: $header-family;
+            text-align: right;
+        }
+        .col-9 {
+            float: left;
+            width: 75%;
+            text-align: right;
+        }
+    }
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    ul {
+        list-style-type: none;
+        background-color: black;
+        overflow: hidden;
+        li {
+           float: left; 
+           a {
+               text-decoration: none;
+               color: white;
+               padding: 14px 16px;
+               display: inline-block;
+               &:hover {
+                   background-color: #555;
+               }
+               &.active {
+                    background-color: #555;
+                }
+           }
+        }
+        
+    }
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: lightgray;
+    height: 100vh;
+    .col-2 {
+        float: left;
+        width: 16%;
+    }
+    .col-8 {
+        float: left;
+        width: 68%;
+    }
+}
