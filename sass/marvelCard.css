@@ -90,4 +90,38 @@ body {
   visibility: visible;
   left: 0%;
 }
+
+@media screen and (max-width: 950px) {
+  .card {
+    position: relative;
+    width: auto;
+    max-width: 600px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .card:hover {
+    height: 600px;
+  }
+  .card:hover img {
+    left: 50%;
+    height: 350px;
+  }
+  .card .content {
+    width: 100%;
+    left: 0%;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .card .content {
+    padding: 30px;
+  }
+  .card:hover img {
+    height: 400px;
+  }
+}
 /*# sourceMappingURL=marvelCard.css.map */

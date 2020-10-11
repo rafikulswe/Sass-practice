@@ -68,3 +68,38 @@ body {
         left: 0%;
     }
 }
+
+@media screen and (max-width : 950px){
+    .card {
+        position: relative;
+        width: auto;
+        max-width: 600px;
+        transition: 0.5s;
+        align-items: flex-start;
+
+        &:hover {
+            height: 600px;
+        }
+        &:hover img{
+            left: 50%;
+            height: 350px;
+        }
+
+        .content {
+            width: 100%;
+            left: 0%;
+            padding: 40px;
+        }
+    }
+}
+
+@media screen and (max-width : 420px){
+    .card {
+        .content {
+            padding: 30px;
+        }
+        &:hover img{
+            height: 400px;
+        }
+    }
+}
