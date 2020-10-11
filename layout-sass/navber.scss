@@ -1,0 +1,26 @@
+.navbar {
+    position: sticky;
+    top: 0px;
+    ul {
+        list-style-type: none;
+        background-color: black;
+        overflow: hidden;
+        li {
+           float: left; 
+           a {
+               text-decoration: none;
+               color: white;
+               padding: 14px 16px;
+               display: inline-block;
+               &:hover {
+                   background-color: #555;
+               }
+               &.active {
+                    background-color: #555;
+                }
+           }
+        }
+        
+    }
+
+}

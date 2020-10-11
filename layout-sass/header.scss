@@ -1,0 +1,19 @@
+.header {
+    padding: 6px;
+    height: 100px;
+    background: $background;
+
+    .row {
+        .col-3 {
+            float: left;
+            width: 25%;
+            font-family: $header-family;
+            text-align: right;
+        }
+        .col-9 {
+            float: left;
+            width: 75%;
+            text-align: right;
+        }
+    }
+}

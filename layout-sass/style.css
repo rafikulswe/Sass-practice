@@ -19,7 +19,8 @@
 .header {
   padding: 6px;
   height: 100px;
-  background-color: lightgray;
+  background: -webkit-gradient(linear, left top, right top, from(#fdfcfb), to(#e2d1c3));
+  background: linear-gradient(90deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 .header .row .col-3 {
@@ -69,17 +70,153 @@
 .container {
   width: 80%;
   margin: 0 auto;
-  background-color: lightgray;
   height: 100vh;
+  margin-bottom: 20px;
 }
 
 .container .col-2 {
   float: left;
   width: 16%;
+  padding: 15px;
+  border-radius: 2px;
+  text-align: center;
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  background: -webkit-gradient(linear, left top, right top, from(#fdfcfb), to(#e2d1c3));
+  background: linear-gradient(90deg, #fdfcfb 0%, #e2d1c3 100%);
+  height: 100%;
+}
+
+.container .col-2 h4 {
+  padding: 3px;
+  border-bottom: 2px solid #d3d3d3;
+  border-top: 2px solid #d3d3d3;
+  margin-bottom: 10px;
+}
+
+.container .col-2 .side-social-icon {
+  padding: 10px;
+}
+
+.container .col-2 .side-social-icon .icon-name {
+  padding: 5px;
+}
+
+.container .col-2 .recent-post .recent-post-head {
+  padding: 10px;
+  border: 2px solid #d3d3d3;
+  margin: 10px 0px;
+}
+
+.container .col-2 .recent-post .post {
+  padding: 10px;
+}
+
+.container .col-2 .recent-post .post .post-item {
+  text-align: left;
+  padding: 5px;
+}
+
+.container .col-2 .recent-post .post .post-item img {
+  width: 60px;
+  height: 45px;
 }
 
 .container .col-8 {
   float: left;
-  width: 68%;
+  width: 66%;
+  margin: 0px 10px;
+  padding: 10px;
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  background: -webkit-gradient(linear, left top, right top, from(#fdfcfb), to(#e2d1c3));
+  background: linear-gradient(90deg, #fdfcfb 0%, #e2d1c3 100%);
+  height: 100%;
+}
+
+.container .col-8 .card {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#b7f8db), to(#50a7c2));
+  background: linear-gradient(90deg, #b7f8db 0%, #50a7c2 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateXY(50%);
+          transform: translateXY(50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .col-8 .card .content {
+  width: 50%;
+  position: relative;
+  left: 10%;
+  padding: 20px 20px 20px 30px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 3px solid #65327b;
+}
+
+.container .col-8 .card .content h2 {
+  color: #65327b;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.container .col-8 .card .content p {
+  color: #000;
+  margin-top: 5px;
+}
+
+.container .col-8 .card .content a {
+  color: #fff;
+  background: #65327b;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.container .col-8 .card:hover .content {
+  opacity: 1;
+  visibility: visible;
+  left: -25%;
+}
+
+.container .col-8 .card img {
+  position: absolute;
+  bottom: 5;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 350px;
+  height: 300px;
+  border-radius: 5px;
+  border: 3px solid #65327b;
+}
+
+.container .col-8 .card:hover img {
+  left: 77%;
+  margin-bottom: 10px;
+  height: 90%;
+}
+
+.container .col-8 .card:hover {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
