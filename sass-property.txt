@@ -1,0 +1,117 @@
+1. Variable
+$myFont: Helvetica, sans-serif;
+body {
+  font-family: $myFont;
+}
+
+2. Nesting
+ul {
+    li {
+        a {
+
+            &:hover {}
+        }
+    }
+}
+
+3. Import scss file
+@import "header";
+
+Partial scss (which will not compile as a css file) file have to declear _colorVeriable.scss
+@import "colorVeriable";
+@use "colorVeriable"; Note: for use this css of this scss file
+body {
+  color: $myBlue;
+}
+
+4. Mixin 
+without Variable
+@mixin important-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+p {
+    @include important-text;
+}
+
+with Variable
+@mixin display-type($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+body {
+    @include display-type(flex, center, center);
+}
+
+5. Extend and Inheritance
+.button-basic  {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report  {
+  @extend .button-basic;
+  background-color: red;
+}
+
+6. Interpolation (concat)
+10 + px = 10px (Possible)
+
+$position: left/right
+padding- + $position = padding-left (Not Possible) 
+padding- #{position} = padding-left (Possible) 
+
+7. Function 
+@function fun-name(a) {
+    return a/2;
+}
+body {
+    width: fun-name(1000);
+}
+
+8. Content 
+@mixin display-type($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    @content;
+}
+body {
+    @include display-type(flex, center, center) {
+        background: red;
+    };
+}
+
+9. Root (for hiding root Nesting)
+@at-root{
+    ul {
+        li {
+            a {
+
+                &:hover {}
+            }
+        }
+    }
+}
+
+10. if-else statement
+$value: 10;
+@if $value > 5 {
+    color: blue;
+} @else {
+    color: red;
+}
+
+11. each loop
+$list: (normal, italic, bold);
+@each $i in $list {
+    .#{$i} {
+        font-weight: $i;
+    }
+}
